@@ -7,7 +7,7 @@ import { Main } from '../models/main';
   providedIn: 'root'
 })
 export class MainService {
-  private baseurl="http://localhost:8088/api/v1/adding"
+  private baseurl="http://localhost:8086/api/v1/adding1"
   constructor(private http:HttpClient) { }
   onfetch():Observable<any>{
     return this.http.get<any>(`${this.baseurl}`)
